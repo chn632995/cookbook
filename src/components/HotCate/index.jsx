@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Grid } from "antd-mobile";
 import Req from "@/http/request";
 import { HOTCAT } from "@/config/uri";
+import { HotCate } from "./style";
 
 class Index extends Component {
     state = {
@@ -27,6 +28,7 @@ class Index extends Component {
     render() {
         return (
             <>
+                <HotCate>热门分类</HotCate>
                 <Grid
                     data={this.state.data}
                     square={false}
@@ -39,7 +41,7 @@ class Index extends Component {
     clickHandler = (el) => {
         console.log(el);
         // 编程式导航走起
-    }
+    };
 }
 
 export default Index;
