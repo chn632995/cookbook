@@ -3,6 +3,8 @@ import React, { Component } from "react";
 
 // 引入当前组件中需要使用的子组件
 import HeaderNav from "@/components/HeaderNav";
+import Swiper from "@/components/Swiper";
+
 class Index extends Component {
     render() {
         return (
@@ -10,7 +12,7 @@ class Index extends Component {
                 {/* 顶部导航 */}
                 <HeaderNav />
                 {/* 轮播图 */}
-                
+                <Swiper />
             </>
         );
     }
