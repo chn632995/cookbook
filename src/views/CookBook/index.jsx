@@ -4,6 +4,8 @@ import React, { Component } from "react";
 // 引入当前组件中需要使用的子组件
 import HeaderNav from "@/components/HeaderNav";
 import Swiper from "@/components/Swiper";
+import Search from "@/components/Search";
+import HotCate from "@/components/HotCate";
 
 class Index extends Component {
     render() {
@@ -13,6 +15,10 @@ class Index extends Component {
                 <HeaderNav />
                 {/* 轮播图 */}
                 <Swiper />
+                {/* 搜索框 */}
+                <Search />
+                {/* 热门分类 */}
+                <HotCate />
             </>
         );
     }

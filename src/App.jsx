@@ -6,6 +6,7 @@ import Layout from "@/components/Layout";
 import GlobalStyle from "./style";
 
 class App extends Component {
+
     render() {
         return (
             <>
