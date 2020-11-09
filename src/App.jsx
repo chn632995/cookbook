@@ -4,16 +4,24 @@ import React, { Component } from "react";
 import Layout from "@/components/Layout";
 // 引入全局样式
 import GlobalStyle from "./style";
+// 引入路由组件
+import { Route,Switch } from "react-router-dom";
+import Detail from "@/components/GoodCook/Detail"
 
 class App extends Component {
-
     render() {
         return (
             <>
                 {/* 全局样式使用 */}
                 <GlobalStyle />
-                {/* 布局文件使用 */}
-                <Layout />
+                <Switch>
+                    {/* 布局文件使用 */}
+                    {/* <Layout /> */}
+                    {/* react路由默认是模糊匹配，只要匹配上前面的一部分则就认为是匹配上的。使用exact表示精确匹配，必须一模一样才算匹配上 */}
+                    <Route path="/" exact component={Layout}></Route>
+                    {/* 路由规则 */}
+                    <Route path="/cb_detail/:id" component={Detail}></Route>
+                </Switch>
             </>
         );
     }

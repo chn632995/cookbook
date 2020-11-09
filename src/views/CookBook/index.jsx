@@ -6,6 +6,7 @@ import HeaderNav from "@/components/HeaderNav";
 import Swiper from "@/components/Swiper";
 import Search from "@/components/Search";
 import HotCate from "@/components/HotCate";
+import GoodCook from "@/components/GoodCook";
 
 class Index extends Component {
     render() {
@@ -19,6 +20,8 @@ class Index extends Component {
                 <Search />
                 {/* 热门分类 */}
                 <HotCate />
+                {/* 精品好菜 */}
+                <GoodCook />
             </>
         );
     }
