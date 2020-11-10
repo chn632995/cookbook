@@ -7,7 +7,7 @@ import store from "@/store";
 // 引入router
 import { BrowserRouter as Router } from "react-router-dom";
 // 引入根组件
-import App from "./App";
+import App from "./Hook";
 
 // 渲染
 ReactDOM.render(
