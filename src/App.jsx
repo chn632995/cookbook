@@ -15,9 +15,9 @@ class App extends Component {
             <>
                 {/* 全局样式使用 */}
                 <GlobalStyle />
+                {/* 布局文件使用 */}
+                {/* <Layout /> */}
                 <Switch>
-                    {/* 布局文件使用 */}
-                    {/* <Layout /> */}
                     {/* react路由默认是模糊匹配，只要匹配上前面的一部分则就认为是匹配上的。使用exact表示精确匹配，必须一模一样才算匹配上 */}
                     <Route path="/" exact component={Layout}></Route>
                     {/* 路由规则 */}

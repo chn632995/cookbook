@@ -4,3 +4,5 @@ export const SWIPER = "/api/swiper";
 export const HOTCAT = "/api/hotcat";
 // 精品好菜
 export const GOODCOOK = "https://api.i-lynn.cn/cookbook";
+// 分类列表
+export const CATEGORY = "/api/category";
